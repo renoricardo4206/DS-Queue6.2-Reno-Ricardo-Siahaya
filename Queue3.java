@@ -9,7 +9,7 @@ public class Queue3 {
         int n = sc.nextInt();
         sc.nextLine();
 
-        // Validasi constraint: 5 < n < 20
+        // Panjang queuenya : 5 < n < 20
         if (n <= 5 || n >= 20) {
             System.out.println("Invalid input: queue length must be between 6 and 19");
             sc.close();
@@ -19,7 +19,7 @@ public class Queue3 {
         String[] names = sc.nextLine().split(" ");
         String[] chancesStr = sc.nextLine().split(" ");
 
-        // Validasi constraint: 1 <= chances <= 10
+        // Jumlah kesempatannya : 1 <= chances <= 10
         Queue<Object[]> queue = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             int chance = Integer.parseInt(chancesStr[i]);
@@ -49,4 +49,5 @@ public class Queue3 {
 
         sc.close();
     }
+
 }
